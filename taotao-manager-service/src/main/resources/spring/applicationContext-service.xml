@@ -32,5 +32,7 @@
     <dubbo:protocol name="dubbo" port="20880" />
     <!-- 声明需要暴露的服务接口，ref为接口实现类名称首字母小写 -->
     <dubbo:service interface="com.taotao.service.TestService" ref="testServiceImpl" timeout="3000" />
-
+    <dubbo:service interface="com.taotao.service.ItemService" ref="itemServiceImpl" timeout="3000" />
+    <dubbo:service interface="com.taotao.service.ItemCatService" ref="itemCatServiceImpl" timeout="3000" />
+    <dubbo:service interface="com.taotao.service.PicService" ref="picServiceImpl" timeout="3000" />
 </beans>
